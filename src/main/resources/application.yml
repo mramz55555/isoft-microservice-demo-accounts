@@ -1,0 +1,9 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: accounts
+  profiles:
+    active: qa
+  config:
+    import: "configserver:http://localhost:8070"
